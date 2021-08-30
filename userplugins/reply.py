@@ -35,7 +35,7 @@ async def reply(client, message):
     except BotInlineDisabled:
         for admin in ADMINS:
             try:
-                await client.send_message(chat_id=admin, text=f"Hey,\nIt seems you have disabled Inline Mode for @{USERNAME}\n\nA Nibba is spaming me in PM, enable inline mode for @{USERNAME} from @Botfather to reply him.")
+                await client.send_message(chat_id=admin, text=f"Hey,\nCó vẻ như bạn đã tắt Chế độ nội tuyến cho @{USERNAME}\n\nMột khứa đang gửi thư rác cho tôi trong PM, hãy bật chế độ nội tuyến cho @{USERNAME} từ @Botfather để trả lời anh ta.")
             except Exception as e:
                 print(e)
                 pass
